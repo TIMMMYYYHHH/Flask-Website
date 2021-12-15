@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<h1>ABOUT</h1>
+{% for number in numbers %}
+<p>{{ number }}</p>
+
+{% if name %}
+<h2>Welcomer back {{ name }}</h2>
+{% endif %}
+
+{% endfor %}
+{% endblock %}
